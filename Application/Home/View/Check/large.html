@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>西电睿思码领取</title>
+        <link rel="stylesheet" href="__ROOT__/Public/css/weui.min.css"/>
+        <script src="__ROOT__/Public/js/jquery.min.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+
+     <div class="beijing">
+        <div class="middle">
+         <img src="__ROOT__/Public/images/0.png" width="320px">
+         <h3 style="text-align:center;font-size:25px;">西电导航邀请码发放</h3>
+         <br>
+         <h3 style="text-align:center;font-size:22px;">今天的发放数量已达上限</h3>
+           <h3 style="text-align:center;font-size:22px;">请您下次再领取</h3>
+       <h3 style="text-align:center;">领取时间为：</h3>
+       <foreach name="detail" item="de">
+        <h3 style="color:red;text-align:center;">自 {$de.date1}至 {$de.date2}</h3><br>
+                <h3 style="color:red;text-align:center;">（每天{$de.time1}至{$de.time2}发放邀请码）</h3><br>
+                </foreach>
+         <p style="font-size: 15px;">如有问题请加西电导航QQ群:553408197</p>
+         <p style="font-size: 15px;">验证信息为学院＋姓名</p>
+        </div>
+        <div class="bottom">
+         <img src="__ROOT__/Public/images/0.jpg" width="320px">
+        </div>
+     </div>
+
+    </body>
+</html>

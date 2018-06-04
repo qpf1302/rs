@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>西电睿思码邀请码领取</title>
+        <link rel="stylesheet" href="__ROOT__/Public/css/weui.min.css"/>
+        <script src="__ROOT__/Public/js/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="beijing">
+              <div class="middle">
+               <br/>
+                <h3>西电导航联合西电睿思发放睿思邀请码啦！</h3><br>
+                <p style="text-align:center">申请须知</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;邀请码申请已向之前没领过的同学开放，每个微信号<b style="color:red">只可领取一次</b>。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;睿思邀请码为西电睿思团队免费发放，请大家遵守睿思相关规定，保证不把申请到的邀请码用于睿思虚拟积分和金钱交易，并感谢赠送邀请码的睿思前辈！ </p>
+                <p style="color:red">&nbsp;&nbsp;&nbsp;&nbsp;每天睿思注册用户过多后，会无法发送验证邮件，故每日至多发放{$num}个邀请码。领不到的同学可以第二天再领取~</p>
+                <p style="color:red">&nbsp;&nbsp;&nbsp;&nbsp;本次睿思码于{$outtime}过期，请在有效期内使用！</p>
+                <form action="__APP__/Home/Check" method="post"> 
+                    <div class="weui_cells_title">
+                    	
+                    </div>
+                    <div class="weui_cells weui_cells_form">
+                        <div class="weui_cell">
+                           <div class="weui_cell_hd">
+                               <label class="weui_label">姓名: </label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input name="username" class="weui_input">
+                            </div>
+                         </div>
+                         <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                               <label class="weui_label">学号: </label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input type="text" name="stuid" class="weui_input">
+                                <input  name="wechatid" type="hidden" value="<?php  echo $_GET['wechatid']?>" />   
+                            </div>
+                         </div>  
+                    </div>
+                    <input  type="submit" value="点击获取睿思邀请码" class="weui_btn weui_btn_mini weui_btn_primary" />
+                     </form>  
+           </div>
+        </div>
+    </body>
+</html>
