@@ -35,6 +35,7 @@ class RuleController extends Controller {
             $result=$rules->where($search)->save($condition);
             if($result){
                 $this->success('保存成功');
+                return;
             }$this->error('请做出修改');
     }
 }

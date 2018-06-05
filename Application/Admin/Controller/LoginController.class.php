@@ -22,6 +22,7 @@ class LoginController extends Controller {
            session('username',$result['username']);
            session('id',$result['userid']);
             $this->success('登陆成功',U('Index/index'));
+            return;
         }
         $this->error('用户名或密码错误');
 

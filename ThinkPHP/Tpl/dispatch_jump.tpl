@@ -22,17 +22,19 @@ body{ background: #fff; font-family: '微软雅黑'; color: #333; font-size: 16p
 <body>
 <div class="system-message">
 <?php if(isset($message)) {?>
-<div style="text-align:center;">
-<img width="40%" src="__ROOT__/Public/images/xidianccweixin.png" >
-</div>
 <br>
 <p class="success" style="text-align:center;color:red;"><?php echo($message); ?></p>
-<?php }else{?>
+<br><br>
 <div style="text-align:center;">
 <img width="40%" src="__ROOT__/Public/images/xidianccweixin.png" >
 </div>
+<?php }else{?>
 <br>
 <p class="error" style="text-align:center;color:red;"><?php echo($error); ?></p>
+<br><br>
+<div style="text-align:center;">
+<img width="40%" src="__ROOT__/Public/images/xidianccweixin.png" >
+</div>
 <?php }?>
 <p class="detail"></p>
 <br>

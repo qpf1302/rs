@@ -41,10 +41,12 @@ class IndexController extends Controller {
     	$result=$history->where($condition)->delete();
     	if($result){
     		$this->success();
+            return;
     	}$this->error();
     }
     public function destroy(){
     	$re=session(null); 
     	$this->success('退出成功',U('Login/index'));
+        return;
     }
 }

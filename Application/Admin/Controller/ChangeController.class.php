@@ -29,6 +29,7 @@ class ChangeController extends Controller {
         $result=$admin->where($condition)->save($change);
         if($result){
             $this->success('修改成功');
+            return;
         }$this->error('请做出修改');
     }
 }
